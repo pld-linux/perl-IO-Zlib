@@ -1,3 +1,7 @@
+#
+# Conditional build:
+%bcond_without	tests	# don't perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	IO
 %define	pnam	Zlib
@@ -10,8 +14,8 @@ License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	914af0c54586d9e979fe03e5f1e341f0
-BuildRequires:	perl-devel >= 5.6
 BuildRequires:	perl-Compress-Zlib
+BuildRequires:	perl-devel >= 5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -35,10 +39,13 @@ IO::Handle.
 	INSTALLDIRS=vendor
 %{__make}
 
+%{?with_tests:%{__make} test}
+
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
