@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	IO
 %define	pnam	Zlib
-Summary:	IO-Zlib perl module
-Summary(pl):	Modu³ perla IO-Zlib
+Summary:	IO::Zlib perl module
+Summary(pl):	Modu³ perla IO::Zlib
 Name:		perl-IO-Zlib
 Version:	1.01
 Release:	5
@@ -16,10 +16,10 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-IO-Zlib perl module.
+IO::Zlib perl module.
 
 %description -l pl
-Modu³ perla IO-Zlib.
+Modu³ perla IO::Zlib.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
