@@ -1,23 +1,30 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	IO
 %define	pnam	Zlib
-Summary:	IO::Zlib - IO:: style interface to L<Compress::Zlib>
+Summary:	IO::Zlib Perl module - IO:: style interface to Compress::Zlib
+Summary(pl):	Modu³ Perla IO::Zlib - interfejs w stylu IO:: do modu³u Compress::Zlib
 Name:		perl-IO-Zlib
 Version:	1.01
-Release:	6
+Release:	7
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.6
 BuildRequires:	perl-Compress-Zlib
+BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-C<IO::Zlib> provides an IO:: style interface to L<Compress::Zlib>
-and hence to gzip/zlib compressed files. It provides many of the same
-methods as the L<IO::Handle> interface.
+IO::Zlib provides an IO:: style interface to Compress::Zlib and hence
+to gzip/zlib compressed files. It provides many of the same methods as
+the IO::Handle interface.
+
+%description -l pl
+Modu³ IO::Zlib udostêpnia interfejs w stylu IO:: do modu³u
+Compress::Zlib, a w ten sposób do plików skompresowanych gzipem lub
+bibliotek± zlib. Udostêpnia wiele metod takich samych jak interfejs
+IO::Handle.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -31,13 +38,11 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf ChangeLog README
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc ChangeLog README
 %{perl_sitelib}/IO/Zlib.pm
 %{_mandir}/man3/*
