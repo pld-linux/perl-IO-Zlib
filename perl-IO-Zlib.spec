@@ -1,8 +1,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	IO
 %define	pnam	Zlib
-Summary:	IO::Zlib perl module
-Summary(pl):	Modu³ perla IO::Zlib
+Summary:	IO::Zlib - IO:: style interface to L<Compress::Zlib>
 Name:		perl-IO-Zlib
 Version:	1.01
 Release:	5
@@ -16,10 +15,9 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-IO::Zlib perl module.
-
-%description -l pl
-Modu³ perla IO::Zlib.
+C<IO::Zlib> provides an IO:: style interface to L<Compress::Zlib>
+and hence to gzip/zlib compressed files. It provides many of the same
+methods as the L<IO::Handle> interface.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
