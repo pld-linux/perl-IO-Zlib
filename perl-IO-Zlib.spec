@@ -10,7 +10,8 @@ Summary(pl):	Modu³ Perla IO::Zlib - interfejs w stylu IO:: do modu³u Compress::Z
 Name:		perl-IO-Zlib
 Version:	1.01
 Release:	8
-License:	GPL
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	914af0c54586d9e979fe03e5f1e341f0
