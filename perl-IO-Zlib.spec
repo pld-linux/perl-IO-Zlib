@@ -9,7 +9,7 @@ Summary:	IO::Zlib Perl module - IO:: style interface to Compress::Zlib
 Summary(pl):	Modu³ Perla IO::Zlib - interfejs w stylu IO:: do modu³u Compress::Zlib
 Name:		perl-IO-Zlib
 Version:	1.01
-Release:	8
+Release:	9
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
