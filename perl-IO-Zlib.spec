@@ -2,7 +2,7 @@
 Summary:	IO-Zlib perl module
 Summary(pl):	Modu³ perla IO-Zlib
 Name:		perl-IO-Zlib
-Version:	1.00
+Version:	1.01
 Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
