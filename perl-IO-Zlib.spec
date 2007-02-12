@@ -6,7 +6,7 @@
 %define		pdir	IO
 %define		pnam	Zlib
 Summary:	IO::Zlib Perl module - IO:: style interface to Compress::Zlib
-Summary(pl):	Modu³ Perla IO::Zlib - interfejs w stylu IO:: do modu³u Compress::Zlib
+Summary(pl.UTF-8):   ModuÅ‚ Perla IO::Zlib - interfejs w stylu IO:: do moduÅ‚u Compress::Zlib
 Name:		perl-IO-Zlib
 Version:	1.04
 Release:	1
@@ -26,10 +26,10 @@ IO::Zlib provides an IO:: style interface to Compress::Zlib and hence
 to gzip/zlib compressed files. It provides many of the same methods as
 the IO::Handle interface.
 
-%description -l pl
-Modu³ IO::Zlib udostêpnia interfejs w stylu IO:: do modu³u
-Compress::Zlib, a w ten sposób do plików skompresowanych gzipem lub
-bibliotek± zlib. Udostêpnia wiele metod takich samych jak interfejs
+%description -l pl.UTF-8
+ModuÅ‚ IO::Zlib udostÄ™pnia interfejs w stylu IO:: do moduÅ‚u
+Compress::Zlib, a w ten sposÃ³b do plikÃ³w skompresowanych gzipem lub
+bibliotekÄ… zlib. UdostÄ™pnia wiele metod takich samych jak interfejs
 IO::Handle.
 
 %prep
