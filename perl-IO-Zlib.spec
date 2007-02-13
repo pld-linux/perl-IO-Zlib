@@ -6,7 +6,7 @@
 %define		pdir	IO
 %define		pnam	Zlib
 Summary:	IO::Zlib Perl module - IO:: style interface to Compress::Zlib
-Summary(pl.UTF-8):   Moduł Perla IO::Zlib - interfejs w stylu IO:: do modułu Compress::Zlib
+Summary(pl.UTF-8):	Moduł Perla IO::Zlib - interfejs w stylu IO:: do modułu Compress::Zlib
 Name:		perl-IO-Zlib
 Version:	1.04
 Release:	1
