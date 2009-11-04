@@ -16,6 +16,7 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/IO/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	078a9387009b928068f70759e61bd08f
 URL:		http://search.cpan.org/dist/IO-Zlib/
+BuildRequires:	perl(Compress::Zlib)
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
