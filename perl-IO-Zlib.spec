@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests	# don't perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	IO
 %define		pnam	Zlib
 Summary:	IO::Zlib Perl module - IO:: style interface to Compress::Zlib
